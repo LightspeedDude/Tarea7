@@ -9,17 +9,11 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <!--<Entry Placeholder="Give me your name">
-                <Entry.Triggers>
-                    <Trigger TargetType="Entry" Property="Isfocused" Value="True">
-                        
-                        <Setter Property="BackgroundColor" Value="AliceBlue"/>
-                    </Trigger>
-                </Entry.Triggers>
-            </Entry>-->
-            
+            <!--Passing Parameters-->
+            <local:Display/>
+
             <!--Visual state-->
-            <Entry IsEnabled="False" BackgroundColor="Black">
+            <Entry IsEnabled="False" BackgroundColor="Black" Text="{Binding Givename}">
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup x:Name="Common">
                         <VisualState x:Name="Normal">
@@ -43,23 +37,22 @@
                     </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
             </Entry>
-            
-            
-            <!--Data Trigger-->
-            <Label>
+
+            <!--String format and Data Trigger-->
+            <Label Text="{Binding Name, StringFormat='Oh, so you are {0}, nice to meet you'}"
+                HorizontalOptions="CenterAndExpand">
                 <Label.Triggers>
-                    <DataTrigger TargetType="Label" Binding="{Binding IsAdmin}" Value="True">
+                    <DataTrigger TargetType="Label" Binding="{Binding Lucky}" Value="True">
 
                         <Setter Property="TextColor" Value="AliceBlue"/>
                     </DataTrigger>
-                    <DataTrigger TargetType="Label" Binding="{Binding IsAdmin}" Value="False">
+                    <DataTrigger TargetType="Label" Binding="{Binding Lucky}" Value="False">
 
                         <Setter Property="TextColor" Value="Red"/>
                     </DataTrigger>
                 </Label.Triggers>
             </Label>
-            <!--Passing Parameters-->
-            <local:Display/>
+
 
 
         </StackLayout>

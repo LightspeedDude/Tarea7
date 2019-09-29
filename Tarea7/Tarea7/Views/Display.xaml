@@ -7,15 +7,22 @@
              x:Class="Tarea7.Views.Display">
   <ContentView.Content>
       <StackLayout>
-          <!--String format-->
-            <Label Text="{Binding Name, StringFormat='I dont know what to do! {0}, help me'}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Label Text="{Binding Day, StringFormat='{0:dd MM, yyyy}'}"/>
+
             <!--Line break-->
-            <Label Text="Juan &10; Is not nice" />
-          
-          
+            <Label Text="Welcome &#10; Please enter your name &#128516;" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="name"/>
+            
+          <!--<Label Text="{Binding Day, StringFormat='{0:dd MM, yyyy}'}"/>-->
+
+            <!--<Entry Placeholder="Give me your name">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="Isfocused" Value="True">
+                        
+                        <Setter Property="BackgroundColor" Value="AliceBlue"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>-->
+
         </StackLayout>
   </ContentView.Content>
 </ContentView>

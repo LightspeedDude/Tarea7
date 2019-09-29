@@ -130,4 +130,7 @@
       <Name>Tarea7</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\name.png" />
+  </ItemGroup>
 </Project>

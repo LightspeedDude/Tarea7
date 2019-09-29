@@ -7,8 +7,9 @@
              x:Class="Tarea7.App">
     <Application.Resources>
         <ResourceDictionary>
+            <!--Adding generic styles-->
             <Style TargetType="Label">
-                
+                <Setter Property="FontAttributes" Value="Bold"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

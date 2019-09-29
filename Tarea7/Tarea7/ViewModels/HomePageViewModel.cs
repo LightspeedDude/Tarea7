@@ -6,9 +6,10 @@ namespace Tarea7.ViewModels
 {
     public class HomePageViewModel
     {
-        public string Name { get; set; } = "Username";
-        public DateTime Day { get; set; }  
-
-        public bool IsAdmin { get; set; }
+        public string Givename { get; set; }
+        public string Name { get; set; } = Givename;
+        public bool Lucky { get; set; }
     }
+
+
 }
