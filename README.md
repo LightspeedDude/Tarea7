@@ -1,9 +1,8 @@
 # Tarea7
 
-Tips and Tricks utilizados:
+--Tips and Tricks utilizados:
 
 Line break
-
 String format
 
 Passing Parameters
@@ -12,11 +11,11 @@ Visual state
 
 Data Trigger
 
-Extra:
+--Extra:
 
 Adding generic styles
 
 Add Emoticons
 
-Screenshots:
+--Screenshots:
 
