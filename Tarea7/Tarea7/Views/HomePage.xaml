@@ -39,21 +39,16 @@
             </Entry>
 
             <!--String format and Data Trigger-->
-            <Label Text="{Binding Name, StringFormat='Oh, so you are {0}, nice to meet you'}"
-                HorizontalOptions="CenterAndExpand">
+            
+            <Label Text="{Binding Name, StringFormat='Oh, so you are {0}, nice to meet you'}">
                 <Label.Triggers>
                     <DataTrigger TargetType="Label" Binding="{Binding Lucky}" Value="True">
 
-                        <Setter Property="TextColor" Value="AliceBlue"/>
+                        <Setter Property="TextColor" Value="Blue"/>
                     </DataTrigger>
-                    <DataTrigger TargetType="Label" Binding="{Binding Lucky}" Value="False">
 
-                        <Setter Property="TextColor" Value="Red"/>
-                    </DataTrigger>
                 </Label.Triggers>
             </Label>
-
-
 
         </StackLayout>
     </ContentPage.Content>

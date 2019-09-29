@@ -9,7 +9,7 @@
       <StackLayout>
 
             <!--Line break-->
-            <Label Text="Welcome &#10; Please enter your name &#128516;" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Welcome &#10; Please enter your name &#128516;"/>
             <Image Source="name"/>
             
           <!--<Label Text="{Binding Day, StringFormat='{0:dd MM, yyyy}'}"/>-->
@@ -22,6 +22,11 @@
                     </Trigger>
                 </Entry.Triggers>
             </Entry>-->
+
+            <!--<DataTrigger TargetType="Label" Binding="{Binding Lucky}" Value="False">
+
+                <Setter Property="TextColor" Value="Red"/>
+            </DataTrigger>-->
 
         </StackLayout>
   </ContentView.Content>

@@ -10,6 +10,7 @@
             <!--Adding generic styles-->
             <Style TargetType="Label">
                 <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
