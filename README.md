@@ -8,13 +8,13 @@ String format
 
 Passing Parameters
 
-Visual state
+Adding generic styles
 
 Data Trigger
 
 --Extra:
 
-Adding generic styles
+Visual state
 
 Add Emoticons
 
