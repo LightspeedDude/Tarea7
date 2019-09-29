@@ -11,6 +11,7 @@
             <Style TargetType="Label">
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontSize" Value="24"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

@@ -9,8 +9,8 @@
       <StackLayout>
 
             <!--Line break-->
-            <Label Text="Welcome &#10; Please enter your name &#128516;"/>
-            <Image Source="name"/>
+            <Label Text="Welcome &#10; Do you know the time? &#128516;" FontSize="32" />
+            <Image Source="clock" WidthRequest="120" HeightRequest="120" />
             
           <!--<Label Text="{Binding Day, StringFormat='{0:dd MM, yyyy}'}"/>-->
 

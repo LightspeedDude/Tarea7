@@ -12,8 +12,22 @@
             <!--Passing Parameters-->
             <local:Display/>
 
+            <!--String format and Data Trigger-->
+
+            <Label Text="{Binding Givetime, StringFormat='{0:T}'}" />
+
+            <Label Text="{Binding Givename, StringFormat='Well, nice meeting you, my name is {0}, btw'}">
+                <Label.Triggers>
+                    <DataTrigger TargetType="Label" Binding="{Binding Lucky}" Value="True">
+                        <Setter Property="TextColor" Value="Blue"/>
+                    </DataTrigger>
+                </Label.Triggers>
+            </Label>
+            
+            
+
             <!--Visual state-->
-            <Entry IsEnabled="False" BackgroundColor="Black" Text="{Binding Givename}">
+            <Entry IsEnabled="False" BackgroundColor="Gray" Text="{Binding Name}">
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup x:Name="Common">
                         <VisualState x:Name="Normal">
@@ -24,13 +38,13 @@
 
                         <VisualState x:Name="Focused">
                             <VisualState.Setters>
-                                <Setter Property="BackgroundColor" Value="White" />
+                                <Setter Property="BackgroundColor" Value="Pink" />
                             </VisualState.Setters>
                         </VisualState>
 
                         <VisualState x:Name="Disabled">
                             <VisualState.Setters>
-                                <Setter Property="BackgroundColor" Value="Black" />
+                                <Setter Property="BackgroundColor" Value="Gray" />
                             </VisualState.Setters>
                         </VisualState>
                         
@@ -38,17 +52,7 @@
                 </VisualStateManager.VisualStateGroups>
             </Entry>
 
-            <!--String format and Data Trigger-->
-            
-            <Label Text="{Binding Name, StringFormat='Oh, so you are {0}, nice to meet you'}">
-                <Label.Triggers>
-                    <DataTrigger TargetType="Label" Binding="{Binding Lucky}" Value="True">
 
-                        <Setter Property="TextColor" Value="Blue"/>
-                    </DataTrigger>
-
-                </Label.Triggers>
-            </Label>
 
         </StackLayout>
     </ContentPage.Content>
