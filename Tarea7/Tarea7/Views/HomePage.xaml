@@ -16,7 +16,7 @@
 
             <Label Text="{Binding Givetime, StringFormat='{0:T}'}" />
 
-            <Label Text="{Binding Givename, StringFormat='Well, nice meeting you, my name is {0}, btw'}">
+            <Label Text="{Binding Givename, StringFormat='Well, nice meeting you, &#10;my name is {0}, btw'}">
                 <Label.Triggers>
                     <DataTrigger TargetType="Label" Binding="{Binding Lucky}" Value="True">
                         <Setter Property="TextColor" Value="Blue"/>
