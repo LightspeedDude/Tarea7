@@ -10,4 +10,5 @@ Data Trigger
 
 Extra:
 
+Adding generic styles, 
 Add Emoticons
